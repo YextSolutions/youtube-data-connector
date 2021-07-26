@@ -82,11 +82,6 @@
       "subfieldPath": []
     },
     {
-      "field": "c_youtube_videoID",
-      "header": "Video ID 2",
-      "subfieldPath": []
-    },
-    {
       "field": "yext/name",
       "header": "Name",
       "subfieldPath": []
