@@ -1,12 +1,12 @@
 {
-  "$id": "c_youtube_channelID",
+  "$id": "c_videoURL",
   "$schema": "https://schema.yext.com/config/km/field/v1",
-  "displayName": "Channel ID",
+  "displayName": "Video URL",
   "group": "NONE",
   "localization": "PRIMARY_ONLY",
   "type": {
     "stringType": {
-      "stereotype": "SIMPLE"
+      "stereotype": "URL"
     }
   },
   "typeId": "yext/string"

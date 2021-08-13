@@ -1,5 +1,5 @@
 {
-  "$id": "ce_youtube_video",
+  "$id": "ce_Video",
   "$schema": "https://schema.yext.com/config/km/entity-type/v1",
   "description": "",
   "displayName": "Video",
@@ -14,19 +14,19 @@
       "required": true
     },
     {
-      "id": "c_youtube_channelID",
+      "id": "c_channelID",
       "required": false
     },
     {
-      "id": "c_youtube_publishedAt",
+      "id": "c_publishedAt",
       "required": false
     },
     {
-      "id": "c_youtube_thumbnailPhoto",
+      "id": "c_thumbnailPhoto",
       "required": false
     },
     {
-      "id": "c_youtube_videoID",
+      "id": "c_videoURL",
       "required": false
     },
     {

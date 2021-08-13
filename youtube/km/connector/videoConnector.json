@@ -1,8 +1,8 @@
 {
-  "$id": "youtube_apiConnector",
+  "$id": "videoConnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "YouTube API Connector",
-  "entityType": "ce_youtube_video",
+  "entityType": "ce_Video",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
@@ -75,6 +75,36 @@
       }
     ]
   },
+   "transforms": [
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Name",
+            "Description"
+          ]
+        },
+        "valueToFind": {
+          "plainText": {
+            "value": "\u0026#39;",
+            "ignoreCase": false
+          }
+        },
+        "replacement": "\u0027"
+      }
+    },
+    {
+      "function": {
+        "inputHeaders": {
+          "headers": [
+            "Video ID 2"
+          ]
+        },
+        "plugin": "youtubeURL",
+        "function": "generateUrl"
+      }
+    }
+  ],
   "mappings": [
     {
       "field": "yext/entityId",
@@ -82,7 +112,7 @@
       "subfieldPath": []
     },
     {
-      "field": "c_youtube_videoID",
+      "field": "c_videoURL",
       "header": "Video ID 2",
       "subfieldPath": []
     },
@@ -97,7 +127,7 @@
       "subfieldPath": []
     },
     {
-      "field": "c_youtube_thumbnailPhoto",
+      "field": "c_thumbnailPhoto",
       "header": "Thumbnail URL",
       "subfieldPath": [
         {
@@ -106,12 +136,12 @@
       ]
     },
     {
-      "field": "c_youtube_publishedAt",
+      "field": "c_publishedAt",
       "header": "Published At",
       "subfieldPath": []
     },
     {
-      "field": "c_youtube_channelID",
+      "field": "c_channelID",
       "header": "Channel ID",
       "subfieldPath": []
     }
