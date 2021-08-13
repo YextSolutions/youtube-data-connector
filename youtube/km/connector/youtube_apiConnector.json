@@ -11,7 +11,7 @@
         "authentication": {
           "apiKey": {
             "key": "key",
-            "value": "${{Add in your API Key}}",
+            "value": "${{API_Key}}",
             "setAsHeader": false
           }
         },
