@@ -6,10 +6,6 @@
   "enabled": true,
   "field": [
     {
-      "id": "yext/description",
-      "required": false
-    },
-    {
       "id": "yext/name",
       "required": true
     },
@@ -26,10 +22,6 @@
       "required": false
     },
     {
-      "id": "c_videoURL",
-      "required": false
-    },
-    {
       "id": "yext/folder",
       "required": false
     },
@@ -40,6 +32,10 @@
     {
       "id": "yext/entityId",
       "required": true
+    },
+    {
+      "id": "yext/videos",
+      "required": false
     }
   ],
   "pluralDisplayName": "Videos"

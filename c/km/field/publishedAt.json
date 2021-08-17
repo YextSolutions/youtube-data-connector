@@ -1,13 +1,11 @@
 {
-    "$id": "c_publishedAt",
-    "$schema": "https://schema.yext.com/config/km/field/v1",
-    "displayName": "Published At",
-    "group": "NONE",
-    "localization": "PRIMARY_ONLY",
-    "type": {
-      "stringType": {
-        "stereotype": "SIMPLE"
-      }
-    },
-    "typeId": "yext/string"
-  }
+  "$id": "c_publishedAt",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Published At",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "dateType": {}
+  },
+  "typeId": "yext/date"
+}

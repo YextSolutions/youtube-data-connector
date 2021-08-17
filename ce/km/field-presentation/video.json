@@ -21,19 +21,16 @@
           "visibleOnAdd": true
         },
         {
-          "id": "c_channelID"
-        },
-        {
-          "id": "c_publishedAt"
+          "id": "yext/videos"
         },
         {
           "id": "c_thumbnailPhoto"
         },
         {
-          "id": "yext/description"
+          "id": "c_publishedAt"
         },
         {
-          "id": "c_videoURL"
+          "id": "c_channelID"
         }
       ]
     },

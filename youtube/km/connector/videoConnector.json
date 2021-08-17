@@ -25,7 +25,7 @@
         },
         "headers": {},
         "queryParams": {
-          "channelId": "${{channel_id}}",
+          "channelId": "${{channelId}}",
           "part": "snippet",
           "type": "video"
         },
@@ -75,7 +75,7 @@
       }
     ]
   },
-   "transforms": [
+  "transforms": [
     {
       "findAndReplace": {
         "inputHeaders": {
@@ -103,28 +103,61 @@
         "plugin": "youtubeURL",
         "function": "generateUrl"
       }
+    },
+    {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Name",
+            "Description"
+          ]
+        },
+        "valueToFind": {
+          "plainText": {
+            "value": "\u0026amp;",
+            "ignoreCase": false
+          }
+        },
+        "replacement": "\u0026"
+      }
+    },
+    {
+      "formatDates": {
+        "inputHeaders": {
+          "headers": [
+            "Published At"
+          ]
+        },
+        "inputFormat": "yyyy-MM-dd\u0027T\u0027kk:mm:ssX"
+      }
     }
   ],
   "mappings": [
     {
-      "field": "yext/entityId",
-      "header": "Video ID",
-      "subfieldPath": []
-    },
-    {
-      "field": "c_videoURL",
-      "header": "Video ID 2",
-      "subfieldPath": []
-    },
-    {
-      "field": "yext/name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
-      "field": "yext/description",
+      "field": "yext/videos",
       "header": "Description",
+      "subfieldPath": [
+        {
+          "name": "description"
+        }
+      ]
+    },
+    {
+      "field": "c_channelID",
+      "header": "Channel ID",
       "subfieldPath": []
+    },
+    {
+      "field": "yext/videos",
+      "header": "Video ID 2",
+      "subfieldPath": [
+        {
+          "name": "video"
+        },
+        {
+          "name": "url"
+        }
+      ]
     },
     {
       "field": "c_thumbnailPhoto",
@@ -136,13 +169,18 @@
       ]
     },
     {
-      "field": "c_publishedAt",
-      "header": "Published At",
+      "field": "yext/entityId",
+      "header": "Video ID",
       "subfieldPath": []
     },
     {
-      "field": "c_channelID",
-      "header": "Channel ID",
+      "field": "yext/name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "c_publishedAt",
+      "header": "Published At",
       "subfieldPath": []
     }
   ]
