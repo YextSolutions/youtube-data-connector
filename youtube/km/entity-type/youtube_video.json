@@ -10,15 +10,15 @@
       "required": true
     },
     {
-      "id": "c_channelID",
+      "id": "youtube_channelID",
       "required": false
     },
     {
-      "id": "c_publishedAt",
+      "id": "youtube_publishedAt",
       "required": false
     },
     {
-      "id": "c_thumbnailPhoto",
+      "id": "youtube_thumbnailPhoto",
       "required": false
     },
     {
