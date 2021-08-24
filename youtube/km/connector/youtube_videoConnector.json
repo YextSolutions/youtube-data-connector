@@ -123,6 +123,23 @@
       }
     },
     {
+      "findAndReplace": {
+        "inputHeaders": {
+          "headers": [
+            "Name",
+            "Description"
+          ]
+        },
+        "valueToFind": {
+          "plainText": {
+            "value": "\u0026quot;",
+            "ignoreCase": false
+          }
+        },
+        "replacement": "\""
+      }
+    },
+    {
       "formatDates": {
         "inputHeaders": {
           "headers": [
