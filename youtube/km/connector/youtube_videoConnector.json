@@ -1,8 +1,8 @@
 {
-  "$id": "videoConnector",
+  "$id": "youtube_videoConnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
-  "displayName": "YouTube API Connector",
-  "entityType": "ce_Video",
+  "displayName": "YouTube Connector",
+  "entityType": "youtube_video",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
@@ -27,7 +27,8 @@
         "queryParams": {
           "channelId": "${{channelId}}",
           "part": "snippet",
-          "type": "video"
+          "type": "video",
+          "maxResults": "50"
         },
         "dataFormat": "JSON"
       }
@@ -100,8 +101,8 @@
             "Video ID 2"
           ]
         },
-        "plugin": "youtubeURL",
-        "function": "generateUrl"
+        "plugin": "youtube_createUrl",
+        "function": "createUrl"
       }
     },
     {
@@ -143,7 +144,7 @@
       ]
     },
     {
-      "field": "c_channelID",
+      "field": "youtube_channelID",
       "header": "Channel ID",
       "subfieldPath": []
     },
@@ -160,7 +161,7 @@
       ]
     },
     {
-      "field": "c_thumbnailPhoto",
+      "field": "youtube_thumbnailPhoto",
       "header": "Thumbnail URL",
       "subfieldPath": [
         {
@@ -179,7 +180,7 @@
       "subfieldPath": []
     },
     {
-      "field": "c_publishedAt",
+      "field": "youtube_publishedAt",
       "header": "Published At",
       "subfieldPath": []
     }

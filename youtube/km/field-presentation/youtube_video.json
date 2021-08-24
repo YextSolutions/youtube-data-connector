@@ -1,7 +1,7 @@
 {
-  "$id": "ce_video",
+  "$id": "youtube_video",
   "$schema": "https://schema.yext.com/config/km/field-presentation/v1",
-  "entityType": "ce_Video",
+  "entityType": "youtube_video",
   "displayName": "Video",
   "presentationEntries": [
     {
@@ -24,13 +24,13 @@
           "id": "yext/videos"
         },
         {
-          "id": "c_thumbnailPhoto"
+          "id": "youtube_thumbnailPhoto"
         },
         {
-          "id": "c_publishedAt"
+          "id": "youtube_publishedAt"
         },
         {
-          "id": "c_channelID"
+          "id": "youtube_channelID"
         }
       ]
     },
