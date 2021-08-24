@@ -1,7 +1,7 @@
 {
   "$id": "youtube_videoConnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
-  "displayName": "YouTube Connector",
+  "displayName": "YouTube Video Connector",
   "entityType": "youtube_video",
   "source": {
     "sourceConfig": {
