@@ -139,6 +139,9 @@
       "header": "Description",
       "subfieldPath": [
         {
+          "index": 0
+        },
+        {
           "name": "description"
         }
       ]
@@ -152,6 +155,9 @@
       "field": "yext/videos",
       "header": "Video ID 2",
       "subfieldPath": [
+        {
+          "index": 0
+        },
         {
           "name": "video"
         },
