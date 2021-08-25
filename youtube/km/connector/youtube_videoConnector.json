@@ -152,16 +152,9 @@
   ],
   "mappings": [
     {
-      "field": "yext/videos",
+      "field": "yext/description",
       "header": "Description",
-      "subfieldPath": [
-        {
-          "index": 0
-        },
-        {
-          "name": "description"
-        }
-      ]
+      "subfieldPath": []
     },
     {
       "field": "youtube_channelID",

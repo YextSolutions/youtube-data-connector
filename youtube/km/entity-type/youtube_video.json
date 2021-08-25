@@ -36,6 +36,10 @@
     {
       "id": "yext/videos",
       "required": false
+    },
+    {
+      "id": "yext/description",
+      "required": false
     }
   ],
   "pluralDisplayName": "Videos"
