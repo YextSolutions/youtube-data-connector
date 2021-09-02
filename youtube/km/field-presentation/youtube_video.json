@@ -24,6 +24,9 @@
           "id": "yext/videos"
         },
         {
+          "id": "youtube_videoURL"
+        },
+        {
           "id": "yext/description"
         },
         {
