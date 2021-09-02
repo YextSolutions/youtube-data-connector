@@ -51,6 +51,11 @@
       },
       {
         "type": "JSON",
+        "header": "Video URL",
+        "path": "id.videoId"
+      },
+      {
+        "type": "JSON",
         "header": "Name",
         "path": "snippet.title"
       },
@@ -98,7 +103,8 @@
       "function": {
         "inputHeaders": {
           "headers": [
-            "Video ID 2"
+            "Video ID 2",
+            "Video URL"
           ]
         },
         "plugin": "youtube_createUrl",
@@ -188,6 +194,11 @@
     {
       "field": "yext/entityId",
       "header": "Video ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "youtube_videoURL",
+      "header": "Video URL",
       "subfieldPath": []
     },
     {

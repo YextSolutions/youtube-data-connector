@@ -22,6 +22,10 @@
       "required": false
     },
     {
+      "id": "youtube_videoURL",
+      "required": false
+    },
+    {
       "id": "yext/folder",
       "required": false
     },
