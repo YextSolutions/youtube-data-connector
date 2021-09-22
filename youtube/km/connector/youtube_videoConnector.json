@@ -158,7 +158,7 @@
   ],
   "mappings": [
     {
-      "field": "yext/description",
+      "field": "description",
       "header": "Description",
       "subfieldPath": []
     },
@@ -168,7 +168,7 @@
       "subfieldPath": []
     },
     {
-      "field": "yext/videos",
+      "field": "videos",
       "header": "Video ID 2",
       "subfieldPath": [
         {
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "field": "yext/entityId",
+      "field": "entityId",
       "header": "Video ID",
       "subfieldPath": []
     },
@@ -202,7 +202,7 @@
       "subfieldPath": []
     },
     {
-      "field": "yext/name",
+      "field": "name",
       "header": "Name",
       "subfieldPath": []
     },

@@ -6,7 +6,7 @@
   "enabled": true,
   "field": [
     {
-      "id": "yext/name",
+      "id": "name",
       "required": true
     },
     {
@@ -26,23 +26,23 @@
       "required": false
     },
     {
-      "id": "yext/folder",
+      "id": "folder",
       "required": false
     },
     {
-      "id": "yext/labels",
+      "id": "labels",
       "required": false
     },
     {
-      "id": "yext/entityId",
+      "id": "entityId",
       "required": true
     },
     {
-      "id": "yext/videos",
+      "id": "videos",
       "required": false
     },
     {
-      "id": "yext/description",
+      "id": "description",
       "required": false
     }
   ],

@@ -13,21 +13,21 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/name",
+          "id": "name",
           "visibleOnAdd": true
         },
         {
-          "id": "yext/entityId",
+          "id": "entityId",
           "visibleOnAdd": true
         },
         {
-          "id": "yext/videos"
+          "id": "videos"
         },
         {
           "id": "youtube_videoURL"
         },
         {
-          "id": "yext/description"
+          "id": "description"
         },
         {
           "id": "youtube_thumbnailPhoto"
@@ -49,10 +49,10 @@
       "entryType": "SECTION",
       "fields": [
         {
-          "id": "yext/folder"
+          "id": "folder"
         },
         {
-          "id": "yext/labels"
+          "id": "labels"
         }
       ]
     }
