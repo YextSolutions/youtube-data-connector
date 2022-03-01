@@ -1,7 +1,7 @@
 {
-  "$id": "youtube_video.default",
+  "$id": "youtube_video",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Video-default",
+  "name": "YouTube Video",
   "entityType": "youtube_video",
   "fields": [
     "youtube_channelID",
