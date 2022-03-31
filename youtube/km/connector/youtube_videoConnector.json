@@ -9,7 +9,7 @@
         "source": "youtube",
         "operation": "fetchVideos",
         "inputs": {
-          "channelId": "{{API_Key}}"
+          "channelId": "${{channelId}}"
         }
       }
     },
