@@ -5,38 +5,13 @@
   "entityType": "youtube_video",
   "source": {
     "sourceConfig": {
-      "apiPullConfig": {
-        "requestType": "GET",
-        "url": "https://www.googleapis.com/youtube/v3/search",
-        "authentication": {
-          "apiKey": {
-            "key": "key",
-            "value": "${{API_Key}}",
-            "setAsHeader": false
-          }
-        },
-        "paginationControl": {
-          "cursorPagination": {
-            "pageKey": "pageToken",
-            "cursor": "nextPageToken",
-            "cursorType": "TOKEN",
-            "detectCursorInHeader": false
-          }
-        },
-        "headers": {},
-        "queryParams": {
-          "channelId": "${{channelId}}",
-          "part": "snippet",
-          "type": "video",
-          "maxResults": "50"
-        },
-        "dataFormat": "JSON"
+      "nativeSourceConfig": {
+        "source": "youtube",
+        "operation": "fetchVideos",
+        "inputs": {
+          "channelId": "{{API_Key}}"
+        }
       }
-    },
-    "baseSelector": {
-      "type": "JSON",
-      "header": "item",
-      "path": "items"
     },
     "selectors": [
       {
