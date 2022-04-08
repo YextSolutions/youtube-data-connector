@@ -20,6 +20,6 @@ If you are not an existing customer, but interested in learning more, try out a 
 2. Navigate to the **Apps > Directory** tab in the platform (or use the link provided above)
 3. Search for the **Youtube Data Connector** app and click **Install**
 4. Proceed through the installation flow to give Yext access to add the connector to your account
-5. Input your **Youtube Channel ID** and click **Autohorize**
+5. Input your **Youtube Channel ID** and click **Authorize**
 
 Once the connector runs, you'll be able to see all your newly created Video entities in the Knowledge Graph!
